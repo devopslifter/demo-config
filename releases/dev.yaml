@@ -18,5 +18,5 @@ spec:
     ingress:
       enabled: false
     image:
-      repository: devopslifter/hello-appvia-demo
+      repository: devopslifter/dev-03da46b0ce3daecd4ef4de7eb430df82214eaa03
     replicaCount: 1
