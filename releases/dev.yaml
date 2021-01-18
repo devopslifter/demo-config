@@ -9,7 +9,7 @@ metadata:
 spec:
   releaseName: dotnet-hello-world
   chart:
-    git: https://github.com/devopslifter/demo-config
+    git: https://github.com/devopslifter/demo-app
     path: charts/dotnet-hello-world
     ref: main
     secretRef:
