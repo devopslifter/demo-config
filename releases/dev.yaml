@@ -15,8 +15,6 @@ spec:
     secretRef:
       name: git-https-credentials
   values:
-    ingress:
-      enabled: false
     image:
       repository: devopslifter/hello-appvia-demo
       tag: dev-03da46b0ce3daecd4ef4de7eb430df82214eaa03
