@@ -18,5 +18,5 @@ spec:
   values:
     image:
       repository: devopslifter/hello-appvia-demo
-      tag: dev-fd0cd294e1319e2ecdcc01d54b7817e413e6471a
+      tag: dev-36fb77ab745d66a0107fa46f979c69cd92ff838e
     replicaCount: 1
