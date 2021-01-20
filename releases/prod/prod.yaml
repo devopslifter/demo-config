@@ -4,7 +4,7 @@ kind: HelmRelease
 metadata:
   name: dotnet-hello-world
   namespace: hello-world
-    annotations:
+  annotations:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: semver:~1.0
 spec:
