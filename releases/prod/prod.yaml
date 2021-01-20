@@ -16,6 +16,9 @@ spec:
     secretRef:
       name: git-https-credentials
   values:
+    image:
+      repository: devopslifter/hello-appvia-demo
+      tag: v1.0
     ingress:
       hosts:
       - host: hello.demos.kore.appvia.io
