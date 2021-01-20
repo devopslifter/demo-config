@@ -18,7 +18,7 @@ spec:
   values:
     image:
       repository: devopslifter/hello-appvia-demo
-      tag: v1.0
+      tag: v1
     ingress:
       hosts:
       - host: hello.demos.kore.appvia.io
