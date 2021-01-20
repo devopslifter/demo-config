@@ -1,0 +1,27 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: dotnet-hello-world
+  namespace: hello-world
+    annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: semver:~1.0
+spec:
+  releaseName: dotnet-hello-world
+  chart:
+    git: https://github.com/devopslifter/demo-app
+    ref: main
+    path: charts/dotnet-hello-world
+    secretRef:
+      name: git-https-credentials
+  values:
+    ingress:
+      hosts:
+      - host: hello.demos.kore.appvia.io
+        paths:
+        - /
+      tls:
+      - hosts:
+        - hello.demos.kore.appvia.io
+        secretName: dotnet-hello-world-tls
