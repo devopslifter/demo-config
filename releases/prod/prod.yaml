@@ -3,7 +3,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: dotnet-hello-world
-  namespace: hello-world
+  namespace: prod
   annotations:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: semver:~1.0
