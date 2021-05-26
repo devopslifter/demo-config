@@ -21,10 +21,10 @@ spec:
       tag: 1.0.1
     ingress:
       hosts:
-      - host: hello.demos.kore.appvia.io
+      - host: prod.eks-development.toms-team.teams.demo.kore.appvia.io
         paths:
         - /
       tls:
       - hosts:
-        - hello.demos.kore.appvia.io
+        - prod.eks-development.toms-team.teams.demo.kore.appvia.io
         secretName: dotnet-hello-world-tls
